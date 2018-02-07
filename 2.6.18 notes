@@ -1,0 +1,19 @@
+Class Objectives
+- ES6
+  - Arrow Functions
+  - Imports
+  - Classes
+  - let & const
+  - Babel & transpiling
+  - template literals
+  - string & array methods
+
+everything in a scope will be inside of squigglies { }
+
+  let a ="c"
+
+  var tinyize = function(name){
+  let a= "b"
+
+    if (true)
+  }
