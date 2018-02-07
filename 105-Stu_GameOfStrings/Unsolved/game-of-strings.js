@@ -1,4 +1,7 @@
-var houses = ['Stark', 'Lannister', 'Targaryen', 'Baratheon'];
+` ` is string interpolation
+
+
+var houses = [`Stark`, `Lannister`, 'Targaryen', 'Baratheon'];
 
 var getRandomHouse = function (houses) {
   return houses[Math.floor(Math.random() * houses.length)];
@@ -13,15 +16,15 @@ var getMove = function () {
 
   // return an object representing the the attacker and defender state
   return {
-    text: '  House ' + defender + ' infringed on the ' + attacker + 's\' honor.\n' +
-    '  As a result, house ' + attacker + ' has decided to attack!',
+    text: `House` ${defender} `infringed on the`  ${attacker}'s ' honor
+     `As a result, house` ${attacker} ` has decided to attack!`,
     attacker: attacker,
     defender: defender
   };
 };
 
 var getLoser = function (move) {
-  if (move.text.indexOf('House Targaryen') === 0) {
+  if (move.text.indexOf(`House Targaryen`) === 0) {
     // Fire and Blood.
     return move.defender;
   }
@@ -46,7 +49,7 @@ var playGame = function () {
   var loser = getLoser(move);
   houses.splice(houses.indexOf(loser), 1);
 
-  console.log('\n  Loser: ' + loser + '\n  Houses Left: ' + houses.join(', ') + '\n  ---\n');
+  console.log('\n  Loser: '  ${loser}'\n  Houses Left: ' ${houses.join(', ')}'\n  ---\n');
 }
 
 while (houses.length > 1) {

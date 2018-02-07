@@ -17,3 +17,123 @@ everything in a scope will be inside of squigglies { }
 
     if (true)
   }
+
+
+- REVIEW JAVASCRIPT AND SCOPES
+
+const s = "william" + "is" + yearsOld + "years old."
+const a = `William is ${yearsOld} years old` // this is better way to code the line above
+
+
+---
+
+const a = [];
+for ( let i = 0; i < 6; i++){
+  a.push(i)
+}
+
+a; [0,1,2,3,4]
+
+const b = a.map( x => x +3)
+const b = a.filter(xx=> %2 === 1)
+
+b; [5,7,9]
+
+a.push(3);
+a.push(4);
+
+
+
+
+
+
+
+(a === a);  /*?*/ true
+
+
+
+--
+
+defining a Function
+function f(){
+
+}
+
+const f2 = function(){
+
+}
+
+const f3= ()=> {
+
+}
+
+function with arguments
+
+function f4(a,b,c){
+
+}
+
+const f5 = (a,b,c) => ....
+
+
+function foo() {
+//this is global bc global is calling this function, when you do an arrow function it binds to this for you. it will still point to this class/file
+}
+
+class car {
+  this.isRunning = false;
+
+  start(){
+    this.isRunning = true
+  }
+}
+
+var obj = {
+  state: 5
+  fn: function(){
+    return this.state
+  }
+}
+
+
+const f = () => {}
+const f2 = a => {}
+
+---
+
+Restructuring an object:
+
+const obj = {
+  key: "value",
+  foo: "foo",
+  bar: "bar",
+  baz: "baz"
+}
+
+you can restructure by either the following:
+
+1.
+const {foo, bar, baz} = obj
+
+or
+
+2.
+const key = obj.foo
+const key = obj.bar
+const key = obj.baz
+
+--
+
+spreading
+
+concatenate 2 arrays with a spread array
+const arr = [4,5,6]
+const newArr = [...arr, 5,6]//[4,5,6,5,5] ...prepending?
+
+function add(a,b)
+function add(a,b,c)
+function add(...args){
+  return args.reduce((prev, curr)=> prev + curr,0)
+}
+
+add(4,5,6,7,8,9)
