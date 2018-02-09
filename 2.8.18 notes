@@ -1,0 +1,30 @@
+REACT
+
+developing user interfaces...anything you can draw on the realm of the screen...
+
+for large apps with rapidly changing apps
+
+component based architecture:
+- when you take an application that has a contact form
+- form component
+- fields component is inside of another component
+- actions component
+- this is how you break down a react application
+
+the concept of components:
+  - UI elements are broken down into re-usable components each sub component behaves in a way that is fully contained
+  - each component can be broken down further
+  - it allows us to logically decompose a UI into different parts
+  - allows us to re-use parts without recoding
+  - component based apps are easier to test, can help find bugs and save time
+
+
+  React.js style: UI  is a pure function of its state
+
+  React has a buffer so it won't trigger changes over and over so it doesnt slow the page, the virtual dom dun dun dun!
+
+  The virtual dom receives the ui updates first... react aims to update with the smallest number of changes
+
+React can be used to build apps on the web, on the server, and in native applications
+
+Babel is a transpiler, you can compile different languages to javascript es5...?
