@@ -30,6 +30,9 @@ const addAvatar = function(avatar) {
   return [...avatars, avatar]
 };
 
+const newArray = addAvatar{(tom:'avatar', gender: 'tom')}
+console.log('did we add tom?' avatars)
+
 const greet = function(avatar) {
   // 2. Update this function to use object destructuring to access the avatar object properties
   const race = avatar.race;

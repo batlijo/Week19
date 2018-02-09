@@ -23,4 +23,15 @@ function multiply4 (a, b) {
   return a * b;
 }
 
+console.log('we are working!!');
+
 // ¯\_(ツ)_/¯
+--
+
+tutoring:
+
+function tom(){
+  console.log('this is tom!!!');
+}
+
+arrow is instead typing the word function
