@@ -28,3 +28,9 @@ the concept of components:
 React can be used to build apps on the web, on the server, and in native applications
 
 Babel is a transpiler, you can compile different languages to javascript es5...?
+
+Yarn is an alternative package manager
+
+JSX is a syntax extension for react elements, it looks like HTML
+
+what is a prop? read only
