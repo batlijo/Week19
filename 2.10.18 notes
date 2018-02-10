@@ -1,0 +1,53 @@
+variable placeholders
+
+react is aware that these are variables and will dynamically update...foreshadowing.
+import React from "react";
+
+// The Math function component accepts a props argument
+const Math = (props) => {
+  let value;
+
+  // Assign value based on the operator
+  switch (props.operator) {
+    case "+":
+      value = props.num1 + props.num2;
+      break;
+    case "-":
+      value = props.num1 - props.num2;
+      break;
+    case "*":
+      value = props.num1 * props.num2;
+      break;
+    case "/":
+      value = props.num1 / props.num2;
+      break;
+    default:
+      value = NaN;
+  }
+
+  // Return a span element containing the calculated value
+  // Set the fontSize to the value in pixels
+  // Unlike a regular function, a component must always return a React element
+  // Null or False are also acceptable return types which won't render anything
+  return <span style={{ fontSize: value }}>{value}</span>;
+};
+
+--
+
+other notes:
+12- stu-props activity:
+
+- reusability
+- create a friend card component just 1 that takes in for different variables or different props
+  - very dynamic
+  - returns jsx wrapped by card that has an image and a name {props.image} and is rendered 4 times
+- html should have been identical except for what...made it modular by making a resuable component...different pictures you give it. Components that are resuable
+- array of data before it went into component would change. it's dynamic
+- create dynamic components that change even though our html didn't change, aha!
+
+
+13- stu-component-map
+render li
+we're mapping multiple li's inside of one big ul 
+whenever we try to to render an array containing JSX react knows to render each JSX element seperately
+using the filter method we can create a new array containing only groceries which havent been purchased
