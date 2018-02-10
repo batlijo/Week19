@@ -51,3 +51,20 @@ render li
 we're mapping multiple li's inside of one big ul 
 whenever we try to to render an array containing JSX react knows to render each JSX element seperately
 using the filter method we can create a new array containing only groceries which havent been purchased
+
+DEMO
+handleIncrement increments this.state.count by 1
+handleIncrement...
+we always use the setstate method to update a coponents state 
+this.setState({ count: this.state.count +1});
+};
+
+activity 15 - decrement counter
+the bonus is very important
+
+handleDecrement = () => {
+  this.setState({count:this.state.count-1});
+};
+
+everything starts from index.html
+
